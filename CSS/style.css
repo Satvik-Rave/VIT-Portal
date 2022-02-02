@@ -1,0 +1,298 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+#navbar::before{
+    content: "";
+    background-color:#044e7f;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+}
+.navb button{
+    margin: 5px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #00000066;
+    color: white;
+    border: black;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-family: auto;
+    cursor: pointer;
+}
+.navb button:hover{
+    background-color: black;
+    transition: 0.7s;
+    padding: 15px;
+}
+#logo img{
+    height: 65px;
+    margin: 3px 6px;
+}
+.place h1{
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+/*----------------Home------------------*/
+body{
+    background-color: #f2f2f2;
+}
+#home{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('https://vit.ac.in/sites/all/themes/vittheme/images/about_banner.jpg');
+    background-size: cover;
+}
+#home div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000ad;
+    width: 44%;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 3rem;
+    color: white;
+}
+#home a{
+    text-decoration: none;
+    color: white;
+}
+#home .btn{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    padding: 10px 28px;
+    transition: 0.5s;
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration-line: none;
+    margin: 10px;
+}
+#home .btn:hover {
+    background: #2196f3;
+    border-color: #0c23a3;
+}
+
+/*----------------HOD------------------*/
+#hod{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    margin: 0 6%;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.right{
+    display: flex;
+    width: 50%;
+}
+.card{
+    background-color: white;
+    border-radius: 4px;
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+}
+.c1{
+    border: 3px solid #3c8dbc;
+}
+.head{
+    color: #444;
+    display: block;
+    position: relative;
+    text-align: center;
+    margin: 0px;
+    padding: 0px 0px 0px 15px;
+    height: auto;
+    overflow: hidden;
+    border-bottom: 1px solid #f4f4f4;
+}
+.head h4{
+    margin: 8.5px 0px;
+    font-size: 1.4rem;
+}
+.mid{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.mid img{
+    width: 155px;
+}
+.r-card{
+    width: 100%;
+    background-color: white;
+    border: 3px solid #f39c12;
+    border-radius: 4px;
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;    
+}
+.r-head{
+    color: #444;
+    display: block;
+    position: relative;
+    margin: 0px;
+    padding: 0px 0px 0px 15px;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    border-bottom: 1px solid #f4f4f4;
+}
+.r-head h4{
+    margin: 8.5px 0px;
+    font-size: 1.4rem;
+}
+.r-box{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.r-box img{
+    width: 155px;
+}
+table{
+    width: 85%;
+    font-size: 1.5rem;
+    border-collapse: collapse;
+}
+table,td,th{
+    border:1px solid rgb(0, 0, 0);
+}
+td,th{
+    padding: 10px;
+}
+.blue{
+    font-weight: bold;
+    background-color: #23527c;
+    color: white
+}
+.pale{
+    background-color: #d1d1d1;
+}
+
+/* -----------------Department------------------ */
+#dept{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#dept div{
+    background-color: #23527c;
+}
+#dept ul li{
+    list-style: none;
+    font-size: 1.5rem;
+    border: 1px solid #ffffff38;
+    padding: 8px;
+}
+#dept div ul li a{
+    text-decoration: none;
+    color: white;
+}
+.sub-menu{
+    display: none;
+}
+#dept ul li:hover .sub-menu{
+    display: block;
+    transition: 0.8s;
+    background-color:rgba(0,0,0,0.7);
+}
+#dept ul li:hover .sub-menu ul{
+    display: block;
+    text-align: center;
+}
+#dept ul li:hover .sub-menu ul li a{
+    padding: 5px;
+}
+
+/* -------------------Faculty------------------- */
+#fac{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* -------------------Courses------------------- */
+#course{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container3,.cred,.cred1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cred th,.cred1 th{
+    background-color: #23527c;
+    color: white;
+}
+.cred th,.cred1 th,.cred td,.cred1 td{
+    padding: 5px; 
+    font-size: 1.3rem;   
+}
+
+/* --------------------Students-------------------- */
+#stu{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container4 th{
+    background-color: #23527c;
+    color: white;
+}
